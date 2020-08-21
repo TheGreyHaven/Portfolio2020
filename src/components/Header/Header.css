@@ -1,2 +1,40 @@
+.logoDiv {
+	background-color: #fff;
+	position: relative;
+}
+
+img {
+	height: 200px;
+	width: 200px;
+}
+
+p.myName {
+	position: absolute;
+	right: 10%;
+	top: 57px;
+	font-size: 100px;
+	font-family: 'Six Caps', sans-serif;
+}
+
+p.jobTitle{
+	position: absolute;
+	right: 10%;
+	top: 185px;
+	font-size: 19.5px;
+	font-family: 'Lekton', sans-serif;
+}
+
+.LogoCircle {
+	position: absolute;
+	left: 10%;
+	top: 75px;
+	width: 200px;
+	height: 200px;
+	background: #fff;
+	-moz-border-radius: 1000px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
+	border: 2px solid #3f444b;
+}
 
 

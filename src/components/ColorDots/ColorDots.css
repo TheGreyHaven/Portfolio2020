@@ -1,6 +1,6 @@
 .dots{
 	position: absolute;
-	top: 3%;
+	top: 10%;
 	left: 3%;
 	display: flex;
 }
@@ -21,7 +21,7 @@
 }
 
 .currentColor {
-  border: 1px solid black;
+  border: 1px solid #3f444b;
 }
 
 .currentColor:hover {

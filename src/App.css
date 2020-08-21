@@ -7,6 +7,7 @@
 body {
 	font-family: 'Six Caps', sans-serif;
 	font-family: 'Lekton', sans-serif;
+	color: #3f444b
 }
 
 #root {
@@ -15,5 +16,12 @@ body {
 
 .container {
 	height: 100%;
+}
+
+.topDiv{
+	height: 180px;
+	width: 100%;
+	border-bottom: 2px solid #3f444b;
+	position: relative;
 }
 

@@ -21,8 +21,10 @@ class App extends Component {
     return (
       <div className="App" >
         <header className="App-header">
-          <ColorDots currentColor={this.state.currentColor} changeColor={this.changeColor}></ColorDots>
-          <Header currentColor={this.state.currentColor} />
+          <div className="topDiv">
+            <ColorDots currentColor={this.state.currentColor} changeColor={this.changeColor}></ColorDots>
+            <Header currentColor={this.state.currentColor} />
+          </div>
         </header>
       </div>
     );

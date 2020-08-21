@@ -9,13 +9,13 @@ class Header extends Component {
 		return (
 			<div>
 				<div className="container-fluid">
-					<div id="dotDiv">
-						<div className="LogoCircleSmall" align="center">
+					<div className="logoDiv">
+						<div className="LogoCircle" align="center">
 							<img alt="Women with glasses" src={require(`../../images/womanGlassesSm${currentColor}.png`)}>
 							</img>
 						</div>
-						<h1 className="myName" style={{ color: colors[currentColor] }}>Haven Giguere</h1>
-						<h2 className="jobTitle">Software Engineer</h2>
+						<p className="myName" style={{ color: colors[currentColor] }}>Haven Giguere</p>
+						<p className="jobTitle">Software Engineer</p>
 					</div>
 				</div>
 			</div>
