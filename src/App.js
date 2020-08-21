@@ -22,7 +22,7 @@ class App extends Component {
       <div className="App" >
         <header className="App-header">
           <ColorDots currentColor={this.state.currentColor} changeColor={this.changeColor}></ColorDots>
-          <Header />
+          <Header currentColor={this.state.currentColor} />
         </header>
       </div>
     );
