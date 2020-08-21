@@ -10,11 +10,18 @@ class App extends Component {
     currentColor: 'green'
   }
 
+  changeColor = (color) => {
+    this.setState({
+      currentColor: color
+    })
+  }
+
   render() {
+    console.log(this.state);
     return (
       <div className="App" >
         <header className="App-header">
-          <ColorDots></ColorDots>
+          <ColorDots currentColor={this.state.currentColor} changeColor={this.changeColor}></ColorDots>
           <Header />
         </header>
       </div>

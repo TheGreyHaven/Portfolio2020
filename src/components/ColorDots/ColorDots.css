@@ -6,7 +6,6 @@
 }
 
 .dot {
-	background: red;
 	width: 25px;
 	height: 25px;
 	-moz-border-radius: 25px;
@@ -18,5 +17,13 @@
 }
 
 .dot:hover {
-	transform: scale(1.1); 
+	transform: scale(1.2); 
+}
+
+.currentColor {
+  border: 1px solid black;
+}
+
+.currentColor:hover {
+	transform: none;
 }
