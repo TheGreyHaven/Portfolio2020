@@ -1,7 +1,4 @@
-.logoDiv {
-	background-color: #fff;
-	position: relative;
-}
+
 
 img {
 	height: 200px;
@@ -9,32 +6,62 @@ img {
 }
 
 p.myName {
-	position: absolute;
-	right: 10%;
-	top: 57px;
-	font-size: 100px;
 	font-family: 'Six Caps', sans-serif;
 }
 
-p.jobTitle{
-	position: absolute;
-	right: 10%;
-	top: 185px;
+
+.jobTitle {
 	font-size: 19.5px;
 	font-family: 'Lekton', sans-serif;
 }
 
-.LogoCircle {
-	position: absolute;
-	left: 10%;
-	top: 75px;
-	width: 200px;
-	height: 200px;
-	background: #fff;
-	-moz-border-radius: 1000px;
-	-webkit-border-radius: 1000px;
-	border-radius: 1000px;
-	border: 2px solid #3f444b;
+
+
+/* xs 768 and under */
+@media (max-width: 767px) {
+	.myName {
+		font-size: 84px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.LogoCircle {
+		width: 200px;
+		height: 200px;
+	}
+	
 }
+
+/* sm 768-991 */
+@media (min-width: 768px){
+	.myName {
+	position: absolute;
+	right: 10%;
+	top: 57px;
+	font-size: 100px;
+	}
+
+	
+	.LogoCircle {
+		position: absolute;
+		left: 10%;
+		top: 75px;
+		width: 200px;
+		height: 200px;
+		background: #fff;
+		-moz-border-radius: 1000px;
+		-webkit-border-radius: 1000px;
+		border-radius: 1000px;
+		border: 2px solid #3f444b;
+	}
+
+	.jobTitle {
+		top: 185px;
+		position: absolute;
+		right: 10%;
+	}
+
+}
+
 
 

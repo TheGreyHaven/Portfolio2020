@@ -1,0 +1,10 @@
+.bio {
+	margin-top: 10%;
+	padding: 5%;
+	text-align: justify;
+	line-height: 1.5em;
+}
+
+.bio p {
+	margin-bottom: 30px;
+}

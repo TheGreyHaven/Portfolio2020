@@ -27,3 +27,18 @@
 .currentColor:hover {
 	transform: none;
 }
+
+/* xs 768 and under */
+@media (max-width: 767px) {
+	.dots{
+		flex-direction: column;
+	}
+}
+
+/* sm 768-991 */
+@media (min-width: 768px){
+	.dots{
+		flex-direction: row;
+	}
+
+}

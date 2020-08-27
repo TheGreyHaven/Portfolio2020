@@ -23,5 +23,18 @@ body {
 	width: 100%;
 	border-bottom: 2px solid #3f444b;
 	position: relative;
+	margin-bottom: 75px;
+}
+
+@media (max-width: 767px) {
+	.container-fluid {
+
+	}
+	
+	.topDiv {
+		height: 310px;
+	
+	}
+	
 }
 
