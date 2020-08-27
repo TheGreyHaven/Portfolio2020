@@ -27,10 +27,7 @@ body {
 }
 
 @media (max-width: 767px) {
-	.container-fluid {
 
-	}
-	
 	.topDiv {
 		height: 310px;
 	

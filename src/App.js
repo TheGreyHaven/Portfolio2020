@@ -29,7 +29,7 @@ class App extends Component {
           </div>
           <Bio></Bio>
         </header>
-        <Projects></Projects>
+        <Projects currentColor={this.state.currentColor}></Projects>
       </div>
     );
   }

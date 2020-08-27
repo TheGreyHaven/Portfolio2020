@@ -1,0 +1,49 @@
+.circleContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.projectItem {
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.projectCircle {
+	height: 200px;
+	width: 200px;
+	background-color: #fff;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	border-radius: 200px;	
+	margin: 25px;
+}
+
+.projectsTitle{
+	font-family: 'Six Caps', sans-serif;
+	color: #fff;
+	font-size: 35px;
+	text-decoration-line: underline;
+	padding-top: 20px;
+	margin-bottom: 40px;
+}
+
+.projectName{
+	color: #fff;
+}
+
+/* xs 768 and under */
+@media (max-width: 767px) {
+	.circleContainer{
+		flex-direction: column;
+	}
+}
+
+/* sm 768-991 */
+@media (min-width: 768px){
+	.circleContainer{
+		flex-direction: row;
+	}
+
+}
