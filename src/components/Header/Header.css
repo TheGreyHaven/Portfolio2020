@@ -15,6 +15,11 @@ p.myName {
 	font-family: 'Lekton', sans-serif;
 }
 
+.fact {
+	font-size: 19.5px;
+	font-family: 'Alata', sans-serif;
+}
+
 
 
 /* xs 768 and under */
@@ -28,6 +33,10 @@ p.myName {
 	.LogoCircle {
 		width: 200px;
 		height: 200px;
+	}
+
+	.fact {
+	padding: 20px;
 	}
 	
 }
@@ -59,6 +68,13 @@ p.myName {
 		top: 185px;
 		position: absolute;
 		right: 10%;
+	}
+
+	.fact {
+		position: absolute;
+		top: 200px;
+		padding:75px;
+		left: 30%;
 	}
 
 }

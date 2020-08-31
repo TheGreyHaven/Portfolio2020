@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import "./Header.css";
 import colors from '../../colors';
+import funFacts from '../../funFacts';
 
 
 class Header extends Component {
@@ -18,6 +19,7 @@ class Header extends Component {
 						<div className="jobTitle">
 							<p className="engineer">Software Engineer</p>
 						</div>
+						<div className="fact" style={{ color: colors[currentColor] }}>*Tid Bit: {funFacts[currentColor]}</div>
 					</div>
 				</div>
 			</div>

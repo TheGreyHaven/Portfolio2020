@@ -18,6 +18,13 @@
 	-webkit-border-radius: 200px;
 	border-radius: 200px;	
 	margin: 25px;
+	border: 2px solid #fff;
+	cursor: pointer;
+	transition: all .2s ease-in-out; 
+}
+
+.projectCircle:hover {
+	transform: scale(1.1); 
 }
 
 .projectsTitle{
@@ -30,7 +37,23 @@
 }
 
 .projectName{
+	font-family: 'Alata', sans-serif;
 	color: #fff;
+}
+
+.circle1 {
+	background-color: #d9d8c8;
+}
+
+.circle3{
+	background-color: #edeef0;
+	border: 1px solid #edeef0;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	outline:none;
 }
 
 /* xs 768 and under */

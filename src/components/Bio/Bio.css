@@ -1,10 +1,27 @@
 .bio {
-	margin-top: 10%;
-	padding: 5%;
 	text-align: justify;
 	line-height: 1.5em;
 }
 
 .bio p {
 	margin-bottom: 30px;
+}
+
+
+/* xs 768 and under */
+@media (max-width: 767px) {
+	.bio {
+		padding: 145px 80px 50px 80px;
+	}
+	
+}
+
+/* sm 768-991 */
+@media (min-width: 768px){
+	.bio {
+		padding: 100px 80px 50px 80px;
+		text-align: justify;
+		line-height: 1.5em;
+	}
+
 }

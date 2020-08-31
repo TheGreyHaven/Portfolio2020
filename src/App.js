@@ -3,13 +3,14 @@ import './App.css';
 import Header from './components/Header/Header';
 import ColorDots from './components/ColorDots/ColorDots';
 import Bio from './components/Bio/Bio';
-import Projects from './components/Projects/Projects'
+import Projects from './components/Projects/Projects';
+import notes from './notes';
 
 
 
 class App extends Component {
   state = {
-    currentColor: 'green'
+    currentColor: 'purple'
   }
 
   changeColor = (color) => {
@@ -19,7 +20,7 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state);
+    console.log(notes[this.state.currentColor]);
     return (
       <div className="App" >
         <header className="App-header">
@@ -27,7 +28,7 @@ class App extends Component {
             <ColorDots currentColor={this.state.currentColor} changeColor={this.changeColor}></ColorDots>
             <Header currentColor={this.state.currentColor} />
           </div>
-          <Bio></Bio>
+          <Bio />
         </header>
         <Projects currentColor={this.state.currentColor}></Projects>
       </div>

@@ -23,14 +23,14 @@ body {
 	width: 100%;
 	border-bottom: 2px solid #3f444b;
 	position: relative;
-	margin-bottom: 75px;
+	margin-bottom: 80px;
 }
 
 @media (max-width: 767px) {
 
 	.topDiv {
 		height: 310px;
-	
+		margin-bottom: 10px;
 	}
 	
 }
