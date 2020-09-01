@@ -8,6 +8,7 @@
 	height: 300px;
 	width: 300px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .projectCircle {
@@ -54,6 +55,7 @@ button {
 	background-color: transparent;
 	border: none;
 	outline:none;
+	cursor: poiner
 }
 
 /* xs 768 and under */
