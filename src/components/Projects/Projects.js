@@ -10,19 +10,22 @@ const projectList = [{
 	title: "Mo'Bingo",
 	src: mobingo,
 	circle: "1",
-	description: "Mo'Bingo was my first web-application. As an illustrator I used to have fun making personalized bingo cards for parties but I could never find an online bingo number generator that I liked. I had this project in the back of my mind for the first six months of online JavaScript, HTML, CSS and (halfway through building the app) jQuery classes. Eventually I created mobil friendly bingo cards to go with the number generator. In the end the code might not be what I'd write today but it's part of my journey to becoming a programmer and I will always feel proud of my first web-app, Mo'Bingo. Why don't you give it a try."
+	description: "Mo'Bingo was my first web-application. As an illustrator I used to have fun making personalized bingo cards for parties but I could never find an online bingo number generator that I liked. I had this project in the back of my mind for the first six months of online JavaScript, HTML, CSS and (halfway through building the app) jQuery classes. Eventually I created mobil friendly bingo cards to go with the number generator. In the end the code might not be what I'd write today but it's part of my journey to becoming a programmer and I will always feel proud of my first web-app, Mo'Bingo. Why don't you give it a try.",
+	github: "https://github.com/TheGreyHaven/BingoWebApp"
 },
 {
 	title: "Plan-It",
 	src: planit,
 	circle: "2",
-	description: "Plan-it was the culmination of all that I learned at Hackbright. Here is a video of me presenting my project. You watch because I can't..."
+	description: "Plan-it was the culmination of all that I learned at Hackbright. Here is a video of me presenting my project. You watch because I can't...",
+	github: "https://github.com/TheGreyHaven/HB-project"
 },
 {
 	title: "Womentor",
 	src: womentor,
 	circle: "3",
-	description: "Womentor is an app that is still a work in progress. Five other software engineers: Charlotte Sarfati, Milagro Arias, Colleen O'Rourke, Amanda Crawford, Robyn Lundin, and I came up with the idea during a Hackathon. Feel free to check out our README on GitHub."
+	description: "Womentor is an app that is still a work in progress. Five other software engineers: Charlotte Sarfati, Milagro Arias, Colleen O'Rourke, Amanda Crawford, Robyn Lundin, and I came up with the idea during a Hackathon. Feel free to check out our README on GitHub.",
+	github: "https://github.com/TheGreyHaven/WoMentor"
 
 }];
 
@@ -47,9 +50,9 @@ class Projects extends Component {
 			<div className="projectContainer" style={{ backgroundColor: colors[currentColor] }}>
 				<div className="projectsTitle" align="center">Projects</div>
 				<div className="circleContainer">
+					<Modal showModal={this.state.showModal} onHide={this.hideModal} project={this.state.projectModal} ></Modal>
 					{projectList.map(project => (
 						<div key={project.circle} className="projectItem">
-							<Modal showModal={this.state.showModal} onHide={this.hideModal} project={this.state.projectModal}></Modal>
 							<div className="projectName" align="center">{project.title}</div>
 							<button onClick={() => this.getModal(project)}>
 								<div className={`projectCircle circle${project.circle}`}>

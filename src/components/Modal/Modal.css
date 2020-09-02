@@ -34,7 +34,8 @@
 }
 
 .projectDescription {
-	margin-bottom: 1.5%;
+  margin-bottom: 1.5%;
+  line-height: 1.5;
 }
 
 
@@ -44,4 +45,76 @@
   top: 10px;
   right: 10px;
   font-size: 30px;
+}
+.modalDiv{
+  height: 100%;
+  width: 100%;
+}
+
+.linkDiv {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+a.modalLinks:link, a.modalLinks:visited, a.modalLinks:active {
+	color: #3f444b;
+	font-size: 18px;
+	border: solid 2px #3f444b;
+	padding: 1%;
+  text-decoration: none;
+  margin: 20px;
+}
+
+a.modalLinks:hover {
+	text-decoration: none;
+  box-shadow: 0 0 0 2px #dce897;
+}
+
+.modalImg{
+	margin: 10px 10px 30px 10px;
+  border: 2px solid #dce897;
+  width: 300px;
+}
+
+.modalVideo{
+	margin: 10px 10px 30px 10px;
+  border: 2px solid #dce897;
+}
+
+
+@media (max-width: 424px){
+	.modalVideo {
+		width: 200px;
+		height: 150px;
+	}
+}
+
+
+@media (min-width: 425px) and (max-width: 767px){
+	.modalVideo {
+		width: 300px;
+		height: 169px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.modalVideo {
+		width: 580px;
+		height: 350px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.modalVideo {
+		width: 640px;
+		height: 360px;
+	}
+}
+
+@media (min-width: 1200px){
+	.modalVideo {
+		width: 640px;
+		height: 360px;
+	}
+
 }
