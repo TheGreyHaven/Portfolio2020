@@ -50,7 +50,7 @@ class Projects extends Component {
 			<div className="projectContainer" style={{ backgroundColor: colors[currentColor] }}>
 				<div className="projectsTitle" align="center">Projects</div>
 				<div className="circleContainer">
-					<Modal showModal={this.state.showModal} onHide={this.hideModal} project={this.state.projectModal} ></Modal>
+					<Modal showModal={this.state.showModal} onHide={this.hideModal} project={this.state.projectModal}></Modal>
 					{projectList.map(project => (
 						<div key={project.circle} className="projectItem">
 							<div className="projectName" align="center">{project.title}</div>

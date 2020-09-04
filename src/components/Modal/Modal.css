@@ -1,5 +1,4 @@
 
-
 .modal {
   position: fixed;
     display: block; 
@@ -45,6 +44,7 @@
   top: 10px;
   right: 10px;
   font-size: 30px;
+  cursor: pointer;
 }
 .modalDiv{
   height: 100%;
@@ -74,7 +74,7 @@ a.modalLinks:hover {
 margin-bottom: 30px;
   border: 2px solid #dce897;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
 }
 

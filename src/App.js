@@ -5,6 +5,7 @@ import ColorDots from './components/ColorDots/ColorDots';
 import Bio from './components/Bio/Bio';
 import Projects from './components/Projects/Projects';
 import notes from './notes';
+import Artwork from './components/Artwork/Artwork';
 
 
 
@@ -31,6 +32,7 @@ class App extends Component {
           <Bio />
         </header>
         <Projects currentColor={this.state.currentColor}></Projects>
+        <Artwork currentColor={this.state.currentColor}></Artwork>
       </div>
     );
   }
