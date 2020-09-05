@@ -10,8 +10,6 @@ class Modal extends Component {
 
 
 	render() {
-
-		console.log(this.props.project.modalSrc)
 		if (!this.props.showModal) {
 			return null;
 		}

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Artwork.css";
+import ArtModal from "../Modal/ArtModal";
 import colors from "../../colors";
 import blueEarth from '../../images/ill-BlueEarthBall2.png';
 import doubleSun from '../../images/ill-DoubleSun.png';
@@ -44,35 +45,61 @@ const artImgs = [wedBridge, wedShells, wedGarden, wedUnderSea, wedSeaMist, wedPo
 	wedGatsby, wedWorldsFair, wedCrispedia, wedChinaPlate, wedBird, wedBerries, wedPassport, wedPostcardTable,
 	wedSteamShip, wedMovie, wedSTD];
 
-const Artwork = props => (
-	<div>
-		<div className="illustrationsTitle" align="center">Illustrations / Art</div>
-		<div className="illustrationsDiv" align="center" >
-			<div>
-				Scientific Illustrations / Sculptures
-		</div>
-			<div className="artworkDiv">
-				{scienceImgs.map(scienceImg => (
-					<div className="imgDiv">
-						<img className="artworkImgs" alt="" src={scienceImg}></img>
-					</div>
-				))}
-			</div>
-			<div className="vl" style={{ borderLeftColor: colors[props.currentColor] }}></div>
-			<div>
-				Wedding Invitations / Cards
-		</div>
-			<div className="artworkDiv">
-				{artImgs.map(artImg => (
-					<div className="imgDiv">
-						<img className="artworkImgs" alt="" src={artImg}></img>
-					</div>
-				))}
-			</div>
-		</div>
-	</div>
+class Artwork extends Component {
+	state = {
+		showModal: false,
+		img: ""
+	}
 
-);
+	getModal = image => {
+		this.setState({ showModal: true, img: image });
+	};
+
+	hideModal = () => {
+		this.setState({ showModal: false });
+	};
+
+
+	render() {
+		const { currentColor } = this.props;
+		return (
+			<div>
+				<div className="illustrationsTitle" align="center">Illustrations / Art</div>
+				<ArtModal showModal={this.state.showModal} onHide={this.hideModal} img={this.state.img}></ArtModal>
+				<div className="illustrationsDiv" align="center" >
+					<div>
+						Scientific Illustrations / Sculptures
+					</div>
+					<div className="artworkDiv">
+						{scienceImgs.map(scienceImg => (
+							<button onClick={() => this.getModal(scienceImg)}>
+								<div className="imgDiv">
+									<img className="artworkImgs" alt="" src={scienceImg}></img>
+								</div>
+							</button>
+						))}
+					</div>
+					<div className="vl" style={{ borderLeftColor: colors[currentColor] }}></div>
+					<div>
+						Wedding Invitations / Cards
+					</div>
+					<div className="artworkDiv">
+						{artImgs.map(artImg => (
+							<button onClick={() => this.getModal(artImg)}>
+								<div className="imgDiv">
+									<img className="artworkImgs" alt="" src={artImg}></img>
+								</div>
+							</button>
+						))}
+					</div>
+				</div>
+			</div>
+		);
+	}
+}
+
+
+
 
 
 export default Artwork;
