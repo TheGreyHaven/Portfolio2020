@@ -28,11 +28,11 @@ class Modal extends Component {
 							<a href="http://mobingo.club/" rel="noopener noreferrer" target="_blank">
 								<img alt="bingo img" className="modalImg" src={bingoImg}></img>
 							</a>
-							<div className="linkDiv" >
+							{/* <div className="linkDiv" >
 								<a href="http://mobingo.club/" className="modalLinks" rel="noopener noreferrer" target="_blank">MoBingo.club</a>
-							</div>
+							</div> */}
 							<div className="linkDiv">
-								<a href="https://github.com/TheGreyHaven/BingoWebApp" rel="noopener noreferrer" id="githubBingo" className="modalLinks" target="_blank">GitHub Repository</a>
+								<a href="https://github.com/TheGreyHaven/BingoWebApp" rel="noopener noreferrer" className="modalLinks" target="_blank">GitHub Repository</a>
 							</div>
 						</div> :
 						this.props.project.title === "Plan-It" ?
@@ -44,7 +44,7 @@ class Modal extends Component {
 									src="https://www.youtube.com/embed/IN9C9oIE8CY">
 								</iframe>
 								<div className="linkDiv">
-									<a href="https://github.com/TheGreyHaven/HB-project" id="github" className="modalLinks" rel="noopener noreferrer" target="_blank">GitHub Repository</a>
+									<a href="https://github.com/TheGreyHaven/HB-project" className="modalLinks" rel="noopener noreferrer" target="_blank">GitHub Repository</a>
 								</div>
 							</div> :
 							this.props.project.title === "Womentor" ?
@@ -53,7 +53,7 @@ class Modal extends Component {
 										<img alt="Womentor Img" responsive="true" className="modalImg" src={womentorImg}></img>
 									</a>
 									<div className="linkDiv">
-										<a href="https://github.com/TheGreyHaven/WoMentor" id="github" className="modalLinks" rel="noopener noreferrer" target="_blank">GitHub Repository</a>
+										<a href="https://github.com/TheGreyHaven/WoMentor" className="modalLinks" rel="noopener noreferrer" target="_blank">GitHub Repository</a>
 									</div>
 								</div> :
 								<div></div>}

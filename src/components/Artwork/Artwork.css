@@ -25,6 +25,12 @@
 
 .imgDiv {
 	margin: 20px;
+	cursor: pointer;
+	transition: all .2s ease-in-out; 
+}
+
+.imgDiv:hover {
+	transform: scale(1.1); 
 }
 
 @media (max-width: 605px){

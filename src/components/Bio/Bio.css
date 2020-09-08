@@ -7,6 +7,23 @@
 	margin-bottom: 30px;
 }
 
+.imgLink{
+	cursor: pointer;
+}
+
+
+
+a.imgLink:link, a.imgLink:visited, a.imgLink:active {
+	color: #3f444b;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+a.imgLink:hover {
+	text-decoration: none;
+}
+
+
 
 /* xs 768 and under */
 @media (max-width: 767px) {

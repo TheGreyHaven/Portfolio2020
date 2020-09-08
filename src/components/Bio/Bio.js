@@ -17,8 +17,14 @@ const Bio = () => {
 				and was elated to discover that software development is a combination of both.
 				I spent years running a wedding invitation
 				design and production shop while creating scientific illustrations on the side
-				(many of which have been published by the world's largest news outlets such as ABC, BBC,
-				CBS, NBC, and USA Today). It was exciting and rewarding work but once I discovered programing, I was hooked.
+				(many of which have been published by the world's largest news outlets such as
+				<a href="https://abcnews.go.com/blogs/extras/2012/10/15/world-news-instant-index-10152012" rel="noopener noreferrer" className="imgLink" target="_blank">ABC</a>
+				<a href="https://www.bbc.co.uk/programmes/p00z2ym2" rel="noopener noreferrer" className="imgLink" target="_blank">BBC</a>
+				<a href="https://www.cbsnews.com/news/astronomers-spot-diamond-planet/" rel="noopener noreferrer" className="imgLink" target="_blank">CBS</a>
+				<a href="http://www.nbcnews.com/id/50449282/ns/technology_and_science-space/t/amateur-astronomers-discover-alien-planets/#.X1e7dZNKjPY" rel="noopener noreferrer" className="imgLink" target="_blank">NBC</a> and
+				<a href="https://www.wired.com/2012/10/diamond-exoplanet/" rel="noopener noreferrer" className="imgLink" target="_blank">Wired</a>
+
+			). It was exciting and rewarding work but once I discovered programing, I was hooked.
       </p>
 			<p>
 				Creativity has been a huge asset in my journey of becoming a software engineer and I'm

@@ -72,7 +72,7 @@ class Artwork extends Component {
 					</div>
 					<div className="artworkDiv">
 						{scienceImgs.map(scienceImg => (
-							<button onClick={() => this.getModal(scienceImg)}>
+							<button key={scienceImg} onClick={() => this.getModal(scienceImg)}>
 								<div className="imgDiv">
 									<img className="artworkImgs" alt="" src={scienceImg}></img>
 								</div>
@@ -85,7 +85,7 @@ class Artwork extends Component {
 					</div>
 					<div className="artworkDiv">
 						{artImgs.map(artImg => (
-							<button onClick={() => this.getModal(artImg)}>
+							<button key={artImg} onClick={() => this.getModal(artImg)}>
 								<div className="imgDiv">
 									<img className="artworkImgs" alt="" src={artImg}></img>
 								</div>
