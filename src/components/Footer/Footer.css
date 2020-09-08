@@ -1,0 +1,54 @@
+.contactTitle{
+	font-family: 'Six Caps', sans-serif;
+	color: #fff;
+	font-size: 35px;
+	text-decoration-line: underline;
+	padding-top: 20px;
+}
+
+.footerRow{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.info {
+	width: 30%;
+} 
+
+.contactInfo {
+	background-color: #fff;
+	color: #3f444b;
+	padding: 30px;
+	margin: 30px 30px 70px 30px;
+	transition: all .2s ease-in-out; 
+}
+
+.contactInfo:hover {
+	text-decoration: none;
+	transform: scale(1.05); 
+}
+
+a:link, a:visited, a:active, a:hover  {
+	text-decoration: none;
+}
+
+
+@media (max-width: 605px){
+
+	.contactTitle{
+		padding-top: 10px;
+	}
+	
+	
+  .footerRow{
+		flex-direction: column;
+	}
+	.info {
+		width: 100%;
+	} 
+
+	.contactInfo {
+		margin: 20px;
+	}
+}
+

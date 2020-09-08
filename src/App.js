@@ -6,6 +6,7 @@ import Bio from './components/Bio/Bio';
 import Projects from './components/Projects/Projects';
 import notes from './notes';
 import Artwork from './components/Artwork/Artwork';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -18,10 +19,10 @@ class App extends Component {
     this.setState({
       currentColor: color
     })
+    console.log(notes[this.state.currentColor]);
   }
 
   render() {
-    console.log(notes[this.state.currentColor]);
     return (
       <div className="App" >
         <header className="App-header">
@@ -33,6 +34,7 @@ class App extends Component {
         </header>
         <Projects currentColor={this.state.currentColor}></Projects>
         <Artwork currentColor={this.state.currentColor}></Artwork>
+        <Footer currentColor={this.state.currentColor}></Footer>
       </div>
     );
   }
